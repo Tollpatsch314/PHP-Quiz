@@ -1,0 +1,1 @@
+<?php global $script; $script="\t\tvar tick=0;function Tick(){var time=".(5*60)+$_SESSION["start_time"]-$_SESSION["time"]."-tick;document.getElementById(\"min\").innerHTML=Int(time/60);sec=(time-Int(Int(time/60)*60));document.getElementById(\"sec\").innerHTML=sec;tick-=0.5;setTimeout(Tick,500);}";?>

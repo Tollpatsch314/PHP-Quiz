@@ -1,0 +1,153 @@
+html {
+	box-sizing: border-box;
+}
+
+html, body {
+	overflow: hidden;
+	position: relative;
+	height: 100%;
+}
+
+body {
+	background: #750d0d;
+	background-image: url("img/background.jpg");
+	background-position: center center;
+	background-size: cover;
+	color: #241f1f;
+	font-family: 'Comfortaa', cursive;
+	font-size: 17px;
+	font-weight: bold;
+	user-select: none;
+	margin: 0;
+	padding: 0;
+	counter-reset: points;
+}
+
+section {
+	background: #750d0d;
+	background: -webkit-linear-gradient(to bottom right, rgb(231 132 105 / 3%), rgb(122 19 16 / 3%));
+	background: linear-gradient(to bottom right, rgb(231 132 105 / 3%), rgb(122 19 16 / 3%));
+	padding-top: 80px;
+	height: 100%;
+}
+
+main {
+	background: -webkit-linear-gradient(to bottom right, rgb(231 132 105 / 85%), rgb(122 19 16 / 90%));
+	background: linear-gradient(to bottom right, rgb(190 43 43 / 85%), rgb(165 108 98 / 90%));
+	border-radius: 15px;
+	padding: 5px 20px 50px;
+	width: 27%;
+	min-width: 800px;
+	/*min-height: 420px;*/
+	margin: 0 auto 214px;
+}
+
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+input[type="checkbox"], input[type="radio"] {
+	display: none;
+}
+
+label.radio {
+	display: block;
+	position: relative;
+	padding-left: 25px;
+	margin-bottom: 25px;
+}
+
+input[type="radio"] + span {
+	border-radius: 100%;
+}
+
+label.radio:hover span {
+	cursor: pointer;
+	border: 3px solid #282727;
+}
+
+.radio:hover {
+	cursor: pointer;
+}
+
+label.radio span {
+	background: rgb(0 0 0 / 0,00);
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	border: 2px solid #000000;
+	position: absolute;
+	top: 3px;
+	left: 0;
+	/* Ein Transition Effekt für den Hover - Checked Status. Dadurch wirkt es etwas animiert. */
+	transition: all .2s linear;
+}
+
+input[type="checkbox"]:checked + span, input[type="radio"]:checked + span {
+	border: 5px solid #0c0b0b;
+	background-color: rgb(90 43 43 / 0,49);
+}
+
+h1 {
+	font-size: 28px;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 20px;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.button1, input[type="number"] {
+	background-color: transparent;
+	border-radius: 10px;
+	border-width: 2px;
+	border-style: groove;
+	border-color: rgb(109 34 34 / 50%);
+	display: inline-block;
+	cursor: pointer;
+	color: #241f1f;
+	font-family: 'Comfortaa', cursive;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 9px 16px;
+	/*float: right;*/
+	text-decoration: none;
+}
+
+input[type="number"] {
+	cursor: text;
+	width: 100px;
+	outline: none;
+}
+
+.select1 {
+	background-color: transparent;
+	border-radius: 8px;
+	border-width: 2px;
+	border-style: groove;
+	border-color: rgb(109 34 34 / 50%);
+	display: inline-block;
+	cursor: pointer;
+	color: #241f1f;
+	font-family: 'Comfortaa', cursive;
+	font-size: medium;
+	font-weight: bold;
+	padding: 3px 9px;
+	text-decoration: none;
+	outline: none;
+}
+
+.button1:hover, .select1:hover, .select1:focus {
+	box-shadow: 0px 0px 5px 5px rgb(225 69 26 / 25%);
+	border-color: rgb(109 34 34 / 40%);
+	background-color: rgb(109 34 34 / 20%);
+}
+
+.button1:active, .select1:active {
+	position: relative;
+	top: 1px;
+}
