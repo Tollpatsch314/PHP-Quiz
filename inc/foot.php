@@ -1,4 +1,1 @@
-<?php if(session_status()!=PHP_SESSION_ACTIVE)header("location: ../");unset($_SESSION["functional"]);?>
-</body>
-
-</html>
+<?php if(session_status()!=PHP_SESSION_ACTIVE)header("location: ../");if(isset($_SESSION["__functional"]))unset($_SESSION["__functional"]);?></body></html>

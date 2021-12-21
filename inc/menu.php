@@ -1,10 +1,11 @@
 <?php
 include"js_header.php";
 # für den Fall des zurückgehens
-unset($_SESSION["question_ids"]);
+#session_destroy();
+/*unset($_SESSION["question_ids"]);
 unset($_SESSION["question_count"]);
 unset($_SESSION["time"]);
-unset($_SESSION["start_time"]);
+unset($_SESSION["start_time"]);*/
 function echo_menu(){
 	$title="Men&uuml;";
 	$background_image = "inc/img/background.jpg";
@@ -31,7 +32,7 @@ function echo_menu(){
 }
 
 function check_input_menu(){
-	if(!empty($_POST["grade"]) && $_POST["grade"] != "0")js_header("./?game_state=start&grade=".$_POST["grade"]);
+	if(!empty($_POST["grade"]) && $_POST["grade"] != "0") js_header("./?game_state=start&grade=".$_POST["grade"]);
 	else echo_menu();
 }
 

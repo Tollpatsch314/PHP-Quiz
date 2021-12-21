@@ -1,4 +1,4 @@
-<?php include"backend_check.php";
+<?php #include"backend_check.php";
 echo"<!DOCTYPE html>\n<html><head>";
 echo"<title>".(empty($title)?"Quiz":$title)."</title>";
 if(!empty($script))echo"<script type=\"text/JavaScript\">".$script."</script>";
