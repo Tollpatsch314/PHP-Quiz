@@ -78,7 +78,7 @@ class QReq {
 			return "";
 
 		case 1:#num_field
-			return "<p>Die richtige Antwort w&auml;re: ".self::$questions[$id][self::$questions[$id][1]+1].".</p>";
+			return "<p>Die richtige Antwort w&auml;re: ".self::$questions[$id][self::$questions[$id][1]+2].".</p>";
 
 		case 2:#radio_button
 			$p_id=intval(self::$questions[$id][self::$questions[$id][1]+3]);
