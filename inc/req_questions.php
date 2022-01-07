@@ -1,6 +1,6 @@
 <?php
 include"random.php";
-include"questions3.php";
+include"questions.php";
 
 #QReq::$questions=GetArray($_SESSION["current_grade"]);
 
