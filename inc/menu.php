@@ -1,11 +1,6 @@
 <?php
 include"js_header.php";
-# für den Fall des zurückgehens
-#session_destroy();
-/*unset($_SESSION["question_ids"]);
-unset($_SESSION["question_count"]);
-unset($_SESSION["time"]);
-unset($_SESSION["start_time"]);*/
+
 function echo_menu(){
 	$title="Men&uuml;";
 	$background_image = "inc/img/background.jpg";
@@ -20,8 +15,8 @@ function echo_menu(){
 	echo"Eure Klassenstufe: ";
 	echo"<select name=\"grade\" class=\"select1\">";
 	echo"<option value=\"0\">Bitte w&auml;hlen</option>";
-	echo"<option value=\"5\">Klasse 5</option>";
-	echo"<option value=\"6\">Klasse 6</option>";
+	echo"<option value=\"5\">Klasse 5</option>";		# change options here or add new ones
+	echo"<option value=\"6\">Klasse 6</option>";		# don't forget to change the value
 	echo"<option value=\"7\">Klasse 7</option>";
 	echo"<option value=\"8\">Klasse 8</option>";
 	echo"<option value=\"9\">Klasse 9</option>";
